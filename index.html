@@ -1,6 +1,6 @@
 <html>
   <body>
-    <div class="insult"></div>
+    <div id="insult"></div>
   </body>
 </html>
 <script>
@@ -17,5 +17,5 @@
   const index = date.getDate() % messages.length;
   const message = messages[index];
 
-  document.getElementById('message').innerText = message;
+  document.getElementById('insult').innerText = message;
 </script>
