@@ -3,3 +3,19 @@
     <div class="insult"></div>
   </body>
 </html>
+<script>
+  const messages = [
+    "you failed the test last week and you know it deep down",
+    "you're so annoying even the website doesn't like you",
+    "your conscience would be proud. if you had one",
+    "top tip: believe in not believing to stay alive.",
+    "tip: continue to be depressed",
+    "i understand your parents think you're a failure, but its ok :)"
+  ];
+
+  const date = new Date();
+  const index = date.getDate() % messages.length;
+  const message = messages[index];
+
+  document.getElementById('message').innerText = message;
+</script>
